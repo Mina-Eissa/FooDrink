@@ -1,0 +1,14 @@
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\bin\Debug\netcoreapp3.1\FooDrink.exe
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\bin\Debug\netcoreapp3.1\FooDrink.deps.json
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\bin\Debug\netcoreapp3.1\FooDrink.runtimeconfig.json
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\bin\Debug\netcoreapp3.1\FooDrink.runtimeconfig.dev.json
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\bin\Debug\netcoreapp3.1\FooDrink.dll
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\bin\Debug\netcoreapp3.1\FooDrink.pdb
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.csproj.AssemblyReference.cache
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.AssemblyInfoInputs.cache
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.AssemblyInfo.cs
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.csproj.CoreCompileInputs.cache
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.dll
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.pdb
+C:\Users\x\Desktop\projects\FooDrink\FooDrink\obj\Debug\netcoreapp3.1\FooDrink.genruntimeconfig.cache
