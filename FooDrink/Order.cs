@@ -12,20 +12,21 @@ namespace FooDrink
     }
     class Order
     {
-        public List<KeyValuePair<Product, int>> OrderItems;
+        public Dictionary<Product, int> OrderItems;
         public int OrderNumber { get; set; }
         public int TableNumber { get; set; }
         public string PersonID { get; set; }
         public Department Destination { get; set; }
         public DateTime OrderDateTime { get; set; }
         public Order() { }
-        public Order(int OrderNumber, int TableNumber, string WaiterID, Department Destination)
+        public Order(int OrderNumber, int TableNumber, string WaiterID, Department Destination,Dictionary<Product, int> Items)
         {
             this.OrderNumber = OrderNumber;
             this.TableNumber = TableNumber;
             this.PersonID = WaiterID;
             this.Destination = Destination;
             this.OrderDateTime = DateTime.Now;
+            this.OrderItems = Items;
         }
         public void ShowOrder()
         {
@@ -43,21 +44,22 @@ namespace FooDrink
         public void ShowItems()
         {
             Console.WriteLine(" Item  Number  Name");
-            for (int i = 1; i <= OrderItems.Count; i++)
+            int i = 1;
+            foreach (KeyValuePair<Product, int> Item in OrderItems)
             {
-                string item = Convert.ToString(i);
+                string item = Convert.ToString(i++);
                 Console.Write(' ' + item);
                 for (int j = item.Length; j < 6; j++)
                 {
                     Console.Write(' ');
                 }
-                item = Convert.ToString(OrderItems[i - 1].Value);
+                item = Convert.ToString(Item.Value);
                 Console.Write(item);
                 for (int j = item.Length; j < 8; j++)
                 {
                     Console.Write(' ');
                 }
-                item = OrderItems[i - 1].Key.ProductName;
+                item = Item.Key.ProductName;
                 Console.Write(item + '\n');
             }
         }

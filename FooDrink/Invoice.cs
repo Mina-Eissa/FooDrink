@@ -7,7 +7,7 @@ namespace FooDrink
     class Invoice
     {
          
-         public List<KeyValuePair<Product,int>> InvoiceItems;
+         public Dictionary<Product,int> InvoiceItems;
         public int InvoiceNumber { get; set; }
         public int TableNumber { get; set; }
         public string PersonID { get; set; }
@@ -17,7 +17,7 @@ namespace FooDrink
         public Invoice() {
             this.Discount = 0;
         }
-        public Invoice(int InvoiceNumber,int TableNumber,string WaiterID, List<KeyValuePair<Product, int>> Items)
+        public Invoice(int InvoiceNumber,int TableNumber,string WaiterID, Dictionary<Product, int> Items)
         {
             this.InvoiceNumber = InvoiceNumber;
             this.TableNumber = TableNumber;
@@ -55,21 +55,22 @@ namespace FooDrink
         public void ShowItems()
         {
             Console.WriteLine(" Item  Number  Name");
-            for (int i = 1; i <= InvoiceItems.Count; i++)
+            int i = 1;
+            foreach(KeyValuePair<Product,int> Item in InvoiceItems)
             {
-                string item = Convert.ToString(i);
+                string item = Convert.ToString(i++);
                 Console.Write(' ' + item);
                 for (int j = item.Length; j < 6; j++)
                 {
                     Console.Write(' ');
                 }
-                item = Convert.ToString(InvoiceItems[i-1].Value);
+                item = Convert.ToString(Item.Value);
                 Console.Write(item);
                 for (int j = item.Length; j < 8; j++)
                 {
                     Console.Write(' ');
                 }
-                item = InvoiceItems[i-1].Key.ProductName;
+                item = Item.Key.ProductName;
                 Console.Write(item + '\n');
             }
         }
